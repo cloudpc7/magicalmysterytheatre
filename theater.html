@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/custom.css">
     <title>Magical Mystery Theatre</title>
 </head>
 <body>
-    <script src="/theatre.js"></script>
+    <div class="grid theatre-container text-center">
+        <h1 class="h1">Magical Mystery Theatre</h1>
+        <div class="grid ticket-pricing">
+            <div class="g-col">
+                <h2 class="h2">Welcome to Magical Mystery Theatre</h2>
+            </div>
+            <div class="grid pricing">
+                <p><a href="#" class="icon-link">General Admission</a> Ticket Prices are $20</p>
+                <p>If you are a guest that is <a href="#" class="icon-link">under 12 or over 65</a>,<br/> you qualify for a magical discount of $10.</p>
+                <p>Are you attending a <a href="#" class="icon-link">matinee</a>?<br/> you will receive an additional $3 off any ticket price!</p>
+            </div>
+                
+                <div class="g-col">
+                    <button type="button" class="btn btn-primary" onclick="buyTicket()" type="button">Purcahse Ticket</button>
+                </div>
+        </div>
+    </div>
+    <script src="./theatre.js"></script>
 </body>
 </html>

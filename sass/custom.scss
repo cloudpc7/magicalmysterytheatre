@@ -1,0 +1,113 @@
+@import "https://fonts.googleapis.com/css2?family=Limelight&family=Mystery+Quest&display=swap";
+
+// enable grid classess for bootstrap
+
+$enable-grid-classes: false;
+$enable-cssgrid: true;
+$font-family-sans-serif: "Limelight", sans-serif;
+$body-bg: #515E9B;
+$headings-margin-bottom: 0;
+$btn-color: black;
+$paragraph-margin-bottom: 0;
+$link-color: #64FFFA;
+
+.theatre-container {
+
+    --bs-rows: auto;
+    --bs-columns: 1;
+    --bs-gap: 2rem;
+    padding-inline: 1rem;
+
+    h1 {
+        padding-top: 1.25rem;
+        color: #64FFFA;
+        font-family: "Mystery Quest", system-ui;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.071rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: -0.0625rem;
+    }
+
+    h2, p {
+        color: #FFEB63;
+    }
+
+    a {
+        color:#FFEB63;
+        text-decoration-thickness: 0.15rem;
+    }
+    
+    .pricing {
+        --bs-gap: .5rem;
+        line-height: 1.62;
+        --bs-body-font-weight: 300;
+    }
+
+    .btn-primary {
+        --bs-btn-bg: #64FFFA;
+        --bs-btn-border-color: none;
+        --bs-btn-color: #4B3CFF;
+        --bs-btn-hover-bg: #FFEB63;
+        --bs-btn-hover-color: #64FFFA;
+        --bs-btn-active-bg: #64FFFA;
+        --bs-btn-active-color: #4839FF;
+        font-size: 1.25rem;
+    }
+
+
+    .ticket-pricing {
+        --bs-rows: auto;
+        --bs-columns: 1;
+        --bs-gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .theatre-container {
+        --bs-gap: 6.25rem;
+        padding-inline: 2rem;
+
+        h1 {
+            padding-top: 1.81rem;
+            font-size: 4.5rem;
+            line-height: 1.5;
+        }
+    
+        h2 {
+            font-size: 3rem;
+            line-height: 1.16;
+            letter-spacing: -0.09375rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+        }
+
+        .ticket-pricing {
+            --bs-gap: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 70rem) {
+    .theatre-container {
+        padding-inline: 0;
+        --bs-gap: 4.56rem;
+
+        h1 {
+            padding-top: 2.44rem;
+            font-size: 5.5rem;
+            letter-spacing: -0.15625rem;
+        }
+    }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
